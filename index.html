@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Rope Simulator</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <h1>Welcome to my Rope Simulator</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html_files/controls.html">Controls</a></li>
+        <li><a href="html_files/about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="program">
+      <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+      <script type='text/javascript'>
+          var Module = {
+              canvas: (function() { return document.getElementById('canvas'); })()
+          };
+      </script>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
